@@ -3,15 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>elompokEnigma App</title>
+    <title>KelompokEnigma App</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
+        <div class="img"></div>
         <h1>KelompokEnigma App</h1>
+        <h5>Aplikasi Berbasis Web untuk Pembagian Kelompok yang bernama "KelompokEnigma App" (Kelas E Angkatan 2022)</h5>
+        <p>Nama Ketua Kelas : Mariyani</p>
+        <br>
         <!-- Input panel -->
         <div>
-            <label for="names">Masukan Nama-nama Anggota (Dipisahkan dengan koma)</label><br>
+            <label for="names">Masukan Nama-nama Anggota Kelompok (Dipisahkan dengan koma)</label><br>
             <textarea id="names" rows="7"></textarea>
         </div>
         <!-- Copy input panel -->
@@ -27,7 +31,7 @@
             <label for="peoplePerGroup">Jumlah Anggota Per Kelompoknya :</label>
             <input type="number" id="peoplePerGroup" min="1">
         </div>
-        <button onclick="divideGroups()">Bagi Kelompok !</button>
+        <button onclick="divideGroups()">Bagi Kelompok </button>
         <div id="result"></div>
     </div>
 
