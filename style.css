@@ -95,3 +95,15 @@ button:hover {
     margin-left: 20px;
     font-weight: bold;
 }
+
+footer {
+    position: static;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #f0f0f0;
+    /* Warna latar belakang footer */
+    padding: 10px 0;
+    /* Padding atas dan bawah footer */
+}
