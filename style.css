@@ -46,10 +46,12 @@ label {
 
 .groupcount {
     backdrop-filter: blur(10px);
+    color: white;
 }
 
 .peoplecount {
     backdrop-filter: blur(10px);
+    color: white;
 }
 
 textarea,
