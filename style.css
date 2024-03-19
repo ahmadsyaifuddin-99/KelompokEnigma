@@ -11,7 +11,7 @@ body {
     /* Sesuaikan ukuran gambar dengan kebutuhan Anda */
     height: 100px;
     /* Sesuaikan ukuran gambar dengan kebutuhan Anda */
-    background-image: url('/asset/graduation.jpg');
+    background-image: url('/asset/Wallpaper2.jpg');
     /* Ganti 'image.jpg' dengan path gambar Anda */
     background-size: cover;
     background-position: center;
@@ -25,8 +25,8 @@ body {
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    background-image: url(./asset/graduation.jpg);
-    backdrop-filter: blur(10px);
+    background-image: url(./asset/Wallpaper2.jpg);
+    /* filter: blur(10px); */
     background-size: cover;
     background-position: center;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -41,6 +41,7 @@ label {
     display: block;
     margin-bottom: 5px;
     color: black;
+    backdrop-filter: blur(10px);
 }
 
 .groupcount {
@@ -84,16 +85,27 @@ button {
     display: block;
     margin-top: 10px;
     padding: 10px 20px;
-    background-color: #007bff;
-    color: #fff;
+    background-color: #181616;
+    color: white;
+    font-weight: bold;
     border: none;
-    border-radius: 3px;
+    border-bottom-right-radius: 15px;
     cursor: pointer;
     transition: background-color 0.3s;
+    transition: 1s;
+
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #030303;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 0px;
+    transition: 1s;
+
+}
+
+.cursor-not-allowed {
+    cursor: not-allowed;
 }
 
 

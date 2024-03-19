@@ -118,6 +118,37 @@ function divideGroups() {
   }
 
   document.getElementById("result").innerHTML = result;
+  document.getElementById("copyButton").disabled = false; // Aktifkan tombol "Salin Data"
+  document.getElementById("copyButton").classList.remove("cursor-not-allowed");
+}
+
+function copyResult() {
+  var resultText = document.getElementById("result").innerText;
+
+  // Buat sebuah elemen textarea untuk menampung data hasil
+  var tempTextArea = document.createElement("textarea");
+  tempTextArea.value = resultText;
+
+  // Sembunyikan elemen textarea dari tampilan
+  tempTextArea.style.position = "absolute";
+  tempTextArea.style.left = "-9999px";
+  tempTextArea.style.top = "0";
+
+  // Tambahkan elemen textarea ke dalam dokumen
+  document.body.appendChild(tempTextArea);
+
+  // Pilih dan salin teks dalam elemen textarea
+  tempTextArea.select();
+  document.execCommand("copy");
+
+  // Hapus elemen textarea setelah menyalin
+  document.body.removeChild(tempTextArea);
+
+  // Beri tahu pengguna bahwa data telah disalin
+  Swal.fire({
+    title: "Data Berhasil disalin!",
+    icon: "success",
+  });
 }
 
 // Menambahkan event listener untuk event sebelum halaman ditinggalkan (refresh atau tutup)
@@ -125,3 +156,7 @@ window.addEventListener("beforeunload", function (event) {
   event.preventDefault(); // Mencegah browser melakukan refresh atau menutup tab tanpa konfirmasi
   event.returnValue = ""; // Menetapkan pesan konfirmasi untuk browser (pada browser yang mendukung)
 });
+
+// Pada awalnya, tombol "Salin Data" akan dinonaktifkan
+document.getElementById("copyButton").disabled = true;
+document.getElementById("copyButton").classList.add("cursor-not-allowed");
