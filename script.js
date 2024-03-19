@@ -17,6 +17,25 @@ function divideGroups() {
   );
   var taskName = document.getElementById("taskName").value; // Ambil nilai inputan untuk nama tugas atau mata kuliah
 
+  // Menyimpan hasil inputan ke dalam objek
+  var inputResult = {
+    names: namesInput,
+    groupCount: groupCount,
+    peoplePerGroup: peoplePerGroup,
+    taskName: taskName,
+  };
+
+  // Mendapatkan riwayat sebelumnya dari local storage
+  var history = JSON.parse(localStorage.getItem("groupDivisionHistory")) || [];
+
+  // Menambahkan hasil inputan ke dalam riwayat
+  history.push(inputResult);
+
+  // Menyimpan riwayat baru ke dalam local storage
+  localStorage.setItem("groupDivisionHistory", JSON.stringify(history));
+
+  // ... kode lainnya untuk membagi kelompok dan menampilkan hasil
+
   var names = namesInput
     .split(",")
     .map((name) => name.trim())
@@ -100,3 +119,9 @@ function divideGroups() {
 
   document.getElementById("result").innerHTML = result;
 }
+
+// Menambahkan event listener untuk event sebelum halaman ditinggalkan (refresh atau tutup)
+window.addEventListener("beforeunload", function (event) {
+  event.preventDefault(); // Mencegah browser melakukan refresh atau menutup tab tanpa konfirmasi
+  event.returnValue = ""; // Menetapkan pesan konfirmasi untuk browser (pada browser yang mendukung)
+});
