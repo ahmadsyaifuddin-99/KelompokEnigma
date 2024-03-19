@@ -56,7 +56,7 @@ function divideGroups() {
     groupSizes.push(groupSize);
 
     result += "<div class='group'>";
-    result += "<h3>Group " + (i + 1) + ": " + groupSizes[i] + " people</h3>";
+    result += "<h3>Kelompok " + (i + 1) + ": " + groupSizes[i] + " Orang</h3>";
     for (var j = 0; j < groupSizes[i]; j++) {
       var currentName = names[currentGroupIndex];
       result += "<p class='member'>" + currentName + "</p>";
