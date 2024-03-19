@@ -28,7 +28,7 @@ function divideGroups() {
     groupCount <= 0 ||
     peoplePerGroup <= 0
   ) {
-    alert("Please enter valid inputs.");
+    alert("Tolong Masukan Jumlah Inputan Kelompoknya");
     return;
   }
 
