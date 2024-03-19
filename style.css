@@ -45,12 +45,12 @@ label {
 
 .groupcount {
     backdrop-filter: blur(10px);
-    color: white;
+    color: black;
 }
 
 .peoplecount {
     backdrop-filter: blur(10px);
-    color: white;
+    color: black;
 }
 
 /* CSS untuk input "Nama Tugas atau Mata Kuliah" */

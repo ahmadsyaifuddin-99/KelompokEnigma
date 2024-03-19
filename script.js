@@ -15,6 +15,7 @@ function divideGroups() {
   var peoplePerGroup = parseInt(
     document.getElementById("peoplePerGroup").value
   );
+  var taskName = document.getElementById("taskName").value; // Ambil nilai inputan untuk nama tugas atau mata kuliah
 
   var names = namesInput
     .split(",")
@@ -56,6 +57,8 @@ function divideGroups() {
     groupSizes.push(groupSize);
 
     result += "<div class='group'>";
+    result +=
+      "<h2><strong>Nama Tugas atau Mata Kuliah:</strong> " + taskName + "</h2>";
     result += "<h3>Kelompok " + (i + 1) + ": " + groupSizes[i] + " Orang</h3>";
     for (var j = 0; j < groupSizes[i]; j++) {
       var currentName = names[currentGroupIndex];
