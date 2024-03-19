@@ -48,6 +48,10 @@ function divideGroups() {
 
   var result = "";
 
+  // Menambahkan bagian atas hanya sekali
+  result +=
+    "<h3><strong>Nama Tugas atau Mata Kuliah:</strong> " + taskName + "</h3>";
+
   for (var i = 0; i < groupCount; i++) {
     var groupSize = Math.floor(totalPeople / groupCount);
     if (remainingPeople > 0) {
@@ -57,8 +61,6 @@ function divideGroups() {
     groupSizes.push(groupSize);
 
     result += "<div class='group'>";
-    result +=
-      "<h2><strong>Nama Tugas atau Mata Kuliah:</strong> " + taskName + "</h2>";
     result += "<h3>Kelompok " + (i + 1) + ": " + groupSizes[i] + " Orang</h3>";
     for (var j = 0; j < groupSizes[i]; j++) {
       var currentName = names[currentGroupIndex];
