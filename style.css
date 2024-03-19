@@ -53,6 +53,23 @@ label {
     color: white;
 }
 
+/* CSS untuk input "Nama Tugas atau Mata Kuliah" */
+#taskName {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+    /* Menghindari penambahan lebar input karena padding dan border */
+}
+
+label[for="taskName"] {
+    display: block;
+    margin-bottom: 5px;
+    color: black;
+}
+
 textarea,
 input[type="number"] {
     width: 100%;
