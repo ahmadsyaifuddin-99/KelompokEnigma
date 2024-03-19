@@ -66,6 +66,7 @@ label {
 
 label[for="taskName"] {
     display: block;
+    backdrop-filter: blur(10px);
     margin-bottom: 5px;
     color: black;
 }
