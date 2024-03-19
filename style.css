@@ -44,6 +44,14 @@ label {
     color: black;
 }
 
+.groupcount {
+    backdrop-filter: blur(10px);
+}
+
+.peoplecount {
+    backdrop-filter: blur(10px);
+}
+
 textarea,
 input[type="number"] {
     width: 100%;
