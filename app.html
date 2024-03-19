@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Group Division App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Group Division App</h1>
+        <!-- Input panel -->
+        <div>
+            <label for="names">Enter Names (Separated by comma):</label><br>
+            <textarea id="names" rows="5"></textarea>
+        </div>
+        <!-- Copy input panel -->
+        <div>
+            <button class="copy-button" onclick="copyData()">Input Data Langsung !</button>
+        </div>
+        <br>
+        <div>
+            <label for="groupCount">Number of Groups:</label>
+            <input type="number" id="groupCount" min="1">
+        </div>
+        <div>
+            <label for="peoplePerGroup">People Per Group:</label>
+            <input type="number" id="peoplePerGroup" min="1">
+        </div>
+        <button onclick="divideGroups()">Divide Groups</button>
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+    <script>
+    function copyData() {
+        var dataToCopy = `Diah (2210010049), Mariyani (2210010095), Ismu (2210010105), Zia (2210010107), Ahmad Syaifuddin (2210010111), Hambali Abdan (2210010143), Januar Muzzaki (2210010182), Gita (2210010187), Syauqan Tsauri (2210010192), Rifqi (2210010194), Riza (2210010234), Rio (2210010275), Amalia Putri (2210010453), Haldi (2210010283), Aldy Rahmatillah (2210010340), Haliza (2210010347), Angri (2210010366), Aqli (2210010633), Niko (2210010395), Mellyta (2210010449), Ryandy (2210010456), Maulidi (2210010663), Akmal (2210010546), Ammar (2210010463), Tiara Desmitha (2210010477), Geraldi (2210010492), Wiza (2210010495), Nur Falah (2210010511)`;
+        document.getElementById("names").value = dataToCopy;
+    }
+    </script>
+</body>
+</html>
