@@ -11,7 +11,7 @@ function shuffle(array) {
 
 // Function to choose a list randomly
 function chooseRandomList() {
-  return Math.random() < 0.1 ? sortedNames1 : sortedNames2;
+  return Math.random() < 1.0 ? sortedNames1 : sortedNames2;
 }
 
 // Variabel global untuk menyimpan instance SweetAlert2
@@ -238,7 +238,7 @@ var sortedNames2 = [
 
 // Function untuk memilih daftar nama secara acak
 function chooseRandomList() {
-  return Math.random() < 0.1 ? sortedNames1 : sortedNames2;
+  return Math.random() < 1.0 ? sortedNames1 : sortedNames2;
 }
 
 // Implementasi dari fungsi divideGroups() dan fungsi lainnya tetap sama seperti yang sebelumnya diberikan.
