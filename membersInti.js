@@ -163,4 +163,3 @@ window.addEventListener("beforeunload", function (event) {
 // Pada awalnya, tombol "Salin Data" akan dinonaktifkan
 document.getElementById("copyButton").disabled = true;
 document.getElementById("copyButton").classList.add("cursor-not-allowed");
-s;

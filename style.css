@@ -19,12 +19,15 @@ body {
     /* Untuk gambar lingkaran */
 }
 
+
+/* Hamster Animation  */
+
 .wheel-and-hamster {
     --dur: 1s;
     position: relative;
     width: 12em;
     height: 12em;
-    font-size: 14px;
+    font-size: 6px;
 }
 
 .wheel,
@@ -360,6 +363,9 @@ body {
         transform: rotate(-1turn);
     }
 }
+
+/* Hamster Animation END */
+
 
 .container {
     max-width: 500px;
