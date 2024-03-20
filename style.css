@@ -97,7 +97,7 @@ button {
 }
 
 button:hover {
-    background-color: #d37604;
+    background-color: #ffab2d;
     border-top-left-radius: 15px;
     border-bottom-right-radius: 0px;
     transition: 1s;
