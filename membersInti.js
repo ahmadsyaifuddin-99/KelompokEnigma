@@ -63,10 +63,10 @@ function divideGroups() {
   // Shuffle the array of names
   names = shuffle(names);
 
-  var sortedNames = [
+  var sortedNames1 = [
     "Tiara Desmitha (2210010477)",
-    "Gita (2210010187)",
     "Ahmad Syaifuddin (2210010111)",
+    "Gita (2210010187)",
     "Angri (2210010366)",
     "Syauqan Tsauri (2210010192)",
     "Aldy Rahmatillah (2210010340)",
@@ -92,6 +92,17 @@ function divideGroups() {
     "Maulidi (2210010663)",
     "Akmal (2210010546)",
     "Wiza (2210010495)",
+  ];
+
+  // Variabel sortedNames kedua dengan kondisi tambahan
+  var sortedNames2 = [
+    "Ismu (2210010105)",
+    "Ahmad Syaifuddin (2210010111)",
+    "Angri (2210010366)",
+    "Mariyani (2210010095)",
+
+    "Alice Johnson (221003XXXX)",
+    // Tambahkan nama-nama atau kondisi tambahan lainnya di sini
   ];
 
   // Reorder names based on the sortedNames array
