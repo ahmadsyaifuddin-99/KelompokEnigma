@@ -302,7 +302,7 @@ var sortedNames4 = [
 
 // Function untuk memilih daftar nama secara acak
 function chooseRandomList() {
-  return Math.random() < 0.6
+  return Math.random() < 0.5
     ? sortedNames1
     : Math.random() < 0.2
     ? sortedNames2
