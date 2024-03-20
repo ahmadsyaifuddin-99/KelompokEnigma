@@ -11,7 +11,7 @@ body {
     /* Sesuaikan ukuran gambar dengan kebutuhan Anda */
     height: 100px;
     /* Sesuaikan ukuran gambar dengan kebutuhan Anda */
-    background-image: url('/asset/Wallpaper2.jpg');
+    background-image: url('/asset/Twist.png');
     /* Ganti 'image.jpg' dengan path gambar Anda */
     background-size: cover;
     background-position: center;
@@ -25,7 +25,7 @@ body {
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    background-image: url(./asset/Wallpaper2.jpg);
+    background-image: url(./asset/Twist.png);
     /* filter: blur(10px); */
     background-size: cover;
     background-position: center;
