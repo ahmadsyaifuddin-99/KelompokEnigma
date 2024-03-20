@@ -10,9 +10,13 @@ function shuffle(array) {
 }
 
 // Function to choose a list randomly
-function chooseRandomList() {
-  return Math.random() < 0.2 ? sortedNames1 : sortedNames2;
-}
+// function chooseRandomList() {
+//   return Math.random() < 0.2
+//     ? sortedNames1
+//     : Math.random() < 0.2
+//     ? sortedNames2
+//     : sortedNames3;
+// }
 
 // Variabel global untuk menyimpan instance SweetAlert2
 let swalTimer;
@@ -70,7 +74,7 @@ function divideGroups() {
   var chosenList = chooseRandomList();
 
   // Reorder names based on the chosen list (sortedNames1 or sortedNames2)
-  names.sort((a, b) => {
+  names.sort((a, b, c) => {
     return chosenList.indexOf(a) - chosenList.indexOf(b);
   });
 
@@ -233,12 +237,44 @@ var sortedNames2 = [
   "Niko (2210010395)",
   "Mellyta (2210010449)",
   "Ryandy (2210010456)",
-  // Tambahkan nama-nama atau kondisi tambahan lainnya di sini
+];
+
+var sortedNames3 = [
+  "Mariyani (2210010095)",
+  "Tiara Desmitha (2210010477)",
+  "Ahmad Syaifuddin (2210010111)",
+  "Angri (2210010366)",
+  "Syauqan Tsauri (2210010192)",
+  "Ismu (2210010105)",
+  "Haldi (2210010283)",
+  "Maulidi (2210010663)",
+  "Akmal (2210010546)",
+  "Riza (2210010234)",
+  "Ammar (2210010463)",
+  "Gita (2210010187)",
+  "Mellyta (2210010449)",
+  "Aqli (2210010633)",
+  "Aldy Rahmatillah (2210010340)",
+  "Rio (2210010275)",
+  "Januar Muzzaki (2210010182)",
+  "Haliza (2210010347)",
+  "Ryandy (2210010456)",
+  "Wiza (2210010495)",
+  "Zia (2210010107)",
+  "Niko (2210010395)",
+  "Diah (2210010049)",
+  "Geraldi (2210010492)",
+  "Amalia Putri (2210010453)",
+  "Rifqi (2210010194)",
+  "Nur Falah (2210010511)",
+  "Hambali Abdan (2210010143)",
 ];
 
 // Function untuk memilih daftar nama secara acak
 function chooseRandomList() {
-  return Math.random() < 0.2 ? sortedNames1 : sortedNames2;
+  return Math.random() < 0.5
+    ? sortedNames1
+    : Math.random() < 0.2
+    ? sortedNames2
+    : sortedNames3;
 }
-
-// Implementasi dari fungsi divideGroups() dan fungsi lainnya tetap sama seperti yang sebelumnya diberikan.
