@@ -9,6 +9,9 @@ function shuffle(array) {
   return array;
 }
 
+// Variabel global untuk menyimpan instance SweetAlert2
+let swalTimer;
+
 function divideGroups() {
   var namesInput = document.getElementById("names").value;
   var groupCount = parseInt(document.getElementById("groupCount").value);
@@ -121,6 +124,35 @@ function divideGroups() {
   }
 
   document.getElementById("result").innerHTML = result;
+
+  // Menampilkan SweetAlert2 dengan timer auto close
+  Swal.fire({
+    title: "Memproses Pengacakan Kelompok!",
+    html: "I will close in <b></b> milliseconds.",
+    timer: 3000, // Waktu dalam milidetik (misalnya 5000 ms = 5 detik)
+    timerProgressBar: true, // Menampilkan progress bar timer
+    didOpen: () => {
+      Swal.showLoading();
+      const timer = Swal.getPopup().querySelector("b");
+      timerInterval = setInterval(() => {
+        timer.textContent = `${Swal.getTimerLeft()}`;
+      }, 100);
+    },
+    willClose: () => {
+      clearInterval(timerInterval);
+    },
+  }).then((result) => {
+    /* Read more about handling dismissals below */
+    if (result.dismiss === Swal.DismissReason.timer) {
+      console.log("I was closed by the timer");
+    }
+  });
+
+  // Menghentikan timer jika pengguna menutup SweetAlert2 sebelum waktu habis
+  swalTimer = setTimeout(() => {
+    Swal.close();
+  }, 5000); // Sesuaikan dengan waktu timer di atas
+
   document.getElementById("copyButton").disabled = false; // Aktifkan tombol "Salin Data"
   document.getElementById("copyButton").classList.remove("cursor-not-allowed");
 }
