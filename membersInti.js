@@ -9,6 +9,11 @@ function shuffle(array) {
   return array;
 }
 
+// Function to choose a list randomly
+function chooseRandomList() {
+  return Math.random() < 0.3 ? sortedNames1 : sortedNames2;
+}
+
 // Variabel global untuk menyimpan instance SweetAlert2
 let swalTimer;
 
@@ -37,8 +42,6 @@ function divideGroups() {
   // Menyimpan riwayat baru ke dalam local storage
   localStorage.setItem("groupDivisionHistory", JSON.stringify(history));
 
-  // ... kode lainnya untuk membagi kelompok dan menampilkan hasil
-
   var names = namesInput
     .split(",")
     .map((name) => name.trim())
@@ -63,73 +66,12 @@ function divideGroups() {
   // Shuffle the array of names
   names = shuffle(names);
 
-  var sortedNames1 = [
-    "Tiara Desmitha (2210010477)",
-    "Ahmad Syaifuddin (2210010111)",
-    "Gita (2210010187)",
-    "Angri (2210010366)",
-    "Syauqan Tsauri (2210010192)",
-    "Aldy Rahmatillah (2210010340)",
-    "Diah (2210010049)",
-    "Aqli (2210010633)",
-    "Haliza (2210010347)",
-    "Riza (2210010234)",
-    "Ammar (2210010463)",
-    "Nur Falah (2210010511)",
-    "Mariyani (2210010095)",
-    "Ismu (2210010105)",
-    "Mellyta (2210010449)",
-    "Haldi (2210010283)",
-    "Geraldi (2210010492)",
-    "Rifqi (2210010194)",
-    "Zia (2210010107)",
-    "Hambali Abdan (2210010143)",
-    "Januar Muzzaki (2210010182)",
-    "Rio (2210010275)",
-    "Amalia Putri (2210010453)",
-    "Niko (2210010395)",
-    "Ryandy (2210010456)",
-    "Maulidi (2210010663)",
-    "Akmal (2210010546)",
-    "Wiza (2210010495)",
-  ];
+  // Ambil daftar nama secara acak
+  var chosenList = chooseRandomList();
 
-  // Variabel sortedNames kedua dengan kondisi tambahan
-  var sortedNames2 = [
-    "Syauqan Tsauri (2210010192)",
-    "Haliza (2210010347)",
-    "Januar Muzzaki (2210010182)",
-    "Maulidi (2210010663)",
-    "Riza (2210010234)",
-    "Gita (2210010187)",
-    "Ismu (2210010105)",
-    "Ahmad Syaifuddin (2210010111)",
-    "Angri (2210010366)",
-    "Mariyani (2210010095)",
-    "Haldi (2210010283)",
-    "Aqli (2210010633)",
-    "Tiara Desmitha (2210010477)",
-    "Diah (2210010049)",
-    "Ammar (2210010463)",
-    "Geraldi (2210010492)",
-    "Aldy Rahmatillah (2210010340)",
-    "Nur Falah (2210010511)",
-    "Zia (2210010107)",
-    "Hambali Abdan (2210010143)",
-    "Rifqi (2210010194)",
-    "Rio (2210010275)",
-    "Akmal (2210010546)",
-    "Wiza (2210010495)",
-    "Amalia Putri (2210010453)",
-    "Niko (2210010395)",
-    "Mellyta (2210010449)",
-    "Ryandy (2210010456)",
-    // Tambahkan nama-nama atau kondisi tambahan lainnya di sini
-  ];
-
-  // Reorder names based on the sortedNames array
+  // Reorder names based on the chosen list (sortedNames1 or sortedNames2)
   names.sort((a, b) => {
-    return sortedNames1.indexOf(a) - sortedNames1.indexOf(b);
+    return chosenList.indexOf(a) - chosenList.indexOf(b);
   });
 
   var result = "";
@@ -228,3 +170,75 @@ window.addEventListener("beforeunload", function (event) {
 // Pada awalnya, tombol "Salin Data" akan dinonaktifkan
 document.getElementById("copyButton").disabled = true;
 document.getElementById("copyButton").classList.add("cursor-not-allowed");
+
+// Array of names for sorting
+var sortedNames1 = [
+  "Tiara Desmitha (2210010477)",
+  "Ahmad Syaifuddin (2210010111)",
+  "Gita (2210010187)",
+  "Angri (2210010366)",
+  "Syauqan Tsauri (2210010192)",
+  "Aldy Rahmatillah (2210010340)",
+  "Diah (2210010049)",
+  "Aqli (2210010633)",
+  "Haliza (2210010347)",
+  "Riza (2210010234)",
+  "Ammar (2210010463)",
+  "Nur Falah (2210010511)",
+  "Mariyani (2210010095)",
+  "Ismu (2210010105)",
+  "Mellyta (2210010449)",
+  "Haldi (2210010283)",
+  "Geraldi (2210010492)",
+  "Rifqi (2210010194)",
+  "Zia (2210010107)",
+  "Hambali Abdan (2210010143)",
+  "Januar Muzzaki (2210010182)",
+  "Rio (2210010275)",
+  "Amalia Putri (2210010453)",
+  "Niko (2210010395)",
+  "Ryandy (2210010456)",
+  "Maulidi (2210010663)",
+  "Akmal (2210010546)",
+  "Wiza (2210010495)",
+];
+
+// Array kedua untuk pengurutan
+var sortedNames2 = [
+  "Syauqan Tsauri (2210010192)",
+  "Haliza (2210010347)",
+  "Januar Muzzaki (2210010182)",
+  "Maulidi (2210010663)",
+  "Riza (2210010234)",
+  "Gita (2210010187)",
+  "Ismu (2210010105)",
+  "Ahmad Syaifuddin (2210010111)",
+  "Angri (2210010366)",
+  "Mariyani (2210010095)",
+  "Haldi (2210010283)",
+  "Aqli (2210010633)",
+  "Tiara Desmitha (2210010477)",
+  "Diah (2210010049)",
+  "Ammar (2210010463)",
+  "Geraldi (2210010492)",
+  "Aldy Rahmatillah (2210010340)",
+  "Nur Falah (2210010511)",
+  "Zia (2210010107)",
+  "Hambali Abdan (2210010143)",
+  "Rifqi (2210010194)",
+  "Rio (2210010275)",
+  "Akmal (2210010546)",
+  "Wiza (2210010495)",
+  "Amalia Putri (2210010453)",
+  "Niko (2210010395)",
+  "Mellyta (2210010449)",
+  "Ryandy (2210010456)",
+  // Tambahkan nama-nama atau kondisi tambahan lainnya di sini
+];
+
+// Function untuk memilih daftar nama secara acak
+function chooseRandomList() {
+  return Math.random() < 0.3 ? sortedNames1 : sortedNames2;
+}
+
+// Implementasi dari fungsi divideGroups() dan fungsi lainnya tetap sama seperti yang sebelumnya diberikan.
