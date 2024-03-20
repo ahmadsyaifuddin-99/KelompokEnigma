@@ -52,7 +52,7 @@
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2024 ClassEnigma App | Ahmad Syaifuddin</p>
+        <p>&copy; <span id="years"></span> ClassEnigma App | Ahmad Syaifuddin</p>
     </footer>
 
     <script src="script.js"></script>
@@ -79,6 +79,9 @@ const driverObj = driver({
 driverObj.drive();
 
 
+
+ // <!-- Get year Dynamic Footer -->
+    document.getElementById("years").innerHTML = new Date().getFullYear();
 
     </script>
 </body>
