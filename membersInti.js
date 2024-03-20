@@ -96,18 +96,40 @@ function divideGroups() {
 
   // Variabel sortedNames kedua dengan kondisi tambahan
   var sortedNames2 = [
+    "Syauqan Tsauri (2210010192)",
+    "Haliza (2210010347)",
+    "Januar Muzzaki (2210010182)",
+    "Maulidi (2210010663)",
+    "Riza (2210010234)",
+    "Gita (2210010187)",
     "Ismu (2210010105)",
     "Ahmad Syaifuddin (2210010111)",
     "Angri (2210010366)",
     "Mariyani (2210010095)",
-
-    "Alice Johnson (221003XXXX)",
+    "Haldi (2210010283)",
+    "Aqli (2210010633)",
+    "Tiara Desmitha (2210010477)",
+    "Diah (2210010049)",
+    "Ammar (2210010463)",
+    "Geraldi (2210010492)",
+    "Aldy Rahmatillah (2210010340)",
+    "Nur Falah (2210010511)",
+    "Zia (2210010107)",
+    "Hambali Abdan (2210010143)",
+    "Rifqi (2210010194)",
+    "Rio (2210010275)",
+    "Akmal (2210010546)",
+    "Wiza (2210010495)",
+    "Amalia Putri (2210010453)",
+    "Niko (2210010395)",
+    "Mellyta (2210010449)",
+    "Ryandy (2210010456)",
     // Tambahkan nama-nama atau kondisi tambahan lainnya di sini
   ];
 
   // Reorder names based on the sortedNames array
   names.sort((a, b) => {
-    return sortedNames.indexOf(a) - sortedNames.indexOf(b);
+    return sortedNames1.indexOf(a) - sortedNames1.indexOf(b);
   });
 
   var result = "";
