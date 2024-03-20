@@ -85,8 +85,8 @@ button {
     display: block;
     margin-top: 10px;
     padding: 10px 20px;
-    background-color: #181616;
-    color: white;
+    background-color: #FC9D0F;
+    color: black;
     font-weight: bold;
     border: none;
     border-bottom-right-radius: 15px;
@@ -97,7 +97,7 @@ button {
 }
 
 button:hover {
-    background-color: #030303;
+    background-color: #d37604;
     border-top-left-radius: 15px;
     border-bottom-right-radius: 0px;
     transition: 1s;

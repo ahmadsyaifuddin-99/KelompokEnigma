@@ -19,7 +19,7 @@
         <!-- Input panel -->
         <div>
             <label for="names"> <b>Masukan Nama-nama Anggota Kelompok (Dipisahkan dengan koma)</b> </label><br>
-            <textarea id="names" rows="7"></textarea>
+            <textarea id="names" placeholder="Asai, Yaya, Vina, dll" rows="7"></textarea>
         </div>
         <!-- Copy input panel -->
         <div>
@@ -29,15 +29,15 @@
         <!-- Inputan untuk nama tugas atau mata kuliah -->
     <div>
         <label for="taskName"> <b>Nama Tugas atau Mata Kuliah :</b> </label>
-        <input type="text" id="taskName">
+        <input type="text" placeholder="Fisika Kuantum" id="taskName">
     </div>
         <div>
             <label class="groupcount" for="groupCount"> <b>Jumlah Kelompok :</b> </label>
-            <input type="number" id="groupCount" min="1">
+            <input type="number" placeholder="5" id="groupCount" min="1">
         </div>
         <div>
             <label class="peoplecount" for="peoplePerGroup"> <b>Jumlah Anggota Per Kelompoknya :</b></label>
-            <input type="number" id="peoplePerGroup" min="1">
+            <input type="number" placeholder="6" id="peoplePerGroup" min="1">
         </div>
         <button onclick="divideGroups()"> Bagi Kelompok <i class="fa-solid fa-people-group"></i> </button>
 
