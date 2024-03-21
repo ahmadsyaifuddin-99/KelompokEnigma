@@ -356,16 +356,16 @@ var sortedNames6 = [
   "Haldi (2210010283)",
   "Geraldi (2210010492)",
   "Rifqi (2210010194)",
-  "Zia (2210010107)",
   "Hambali Abdan (2210010143)",
   "Januar Muzzaki (2210010182)",
-  "Rio (2210010275)",
+  "Akmal (2210010546)",
   "Amalia Putri (2210010453)",
   "Niko (2210010395)",
   "Ryandy (2210010456)",
   "Maulidi (2210010663)",
-  "Akmal (2210010546)",
+  "Rio (2210010275)",
   "Wiza (2210010495)",
+  "Zia (2210010107)",
 ];
 
 // Variabel global untuk menyimpan probabilitas pengacakan
