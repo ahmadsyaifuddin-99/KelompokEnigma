@@ -81,7 +81,7 @@ function divideGroups() {
   var result = "";
 
   // Menambahkan bagian atas hanya sekali
-  result += "<h3><strong>Nama Mata Kuliah:</strong> " + taskName + "</h3>";
+  result += "<h3><strong>Nama Mata Kuliah:</strong> " + taskName + "</h3> <br>";
 
   for (var i = 0; i < groupCount; i++) {
     var groupSize = Math.floor(totalPeople / groupCount);
