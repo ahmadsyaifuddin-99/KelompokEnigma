@@ -339,7 +339,7 @@ var sortedNames5 = [
 // Variabel global untuk menyimpan probabilitas pengacakan
 let probability1 = 0.6;
 let probability2 = 0.2;
-let probability3 = 0.6;
+let probability3 = 0.4;
 let probability4 = 0.5;
 
 // Function untuk memilih daftar nama secara acak
