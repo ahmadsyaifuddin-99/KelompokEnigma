@@ -133,6 +133,11 @@ function divideGroups() {
 
   document.getElementById("copyButton").disabled = false; // Aktifkan tombol "Salin Data"
   document.getElementById("copyButton").classList.remove("cursor-not-allowed");
+
+  probability1 = Math.random();
+  probability2 = Math.random();
+  probability3 = Math.random();
+  probability4 = Math.random();
 }
 
 function copyResult() {
@@ -331,15 +336,21 @@ var sortedNames5 = [
   "Tiara Desmitha (2210010477)",
 ];
 
+// Variabel global untuk menyimpan probabilitas pengacakan
+let probability1 = 0.6;
+let probability2 = 0.2;
+let probability3 = 0.6;
+let probability4 = 0.5;
+
 // Function untuk memilih daftar nama secara acak
 function chooseRandomList() {
-  return Math.random() < 0.5
+  return Math.random() < probability1
     ? sortedNames1
-    : Math.random() < 0.2
+    : Math.random() < probability2
     ? sortedNames2
-    : Math.random() < 0.6
+    : Math.random() < probability3
     ? sortedNames3
-    : Math.random() < 0.5
+    : Math.random() < probability4
     ? sortedNames4
     : sortedNames5;
 }
