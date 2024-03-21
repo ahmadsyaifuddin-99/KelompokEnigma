@@ -138,6 +138,7 @@ function divideGroups() {
   probability2 = Math.random();
   probability3 = Math.random();
   probability4 = Math.random();
+  probability5 = Math.random();
 }
 
 function copyResult() {
@@ -336,11 +337,43 @@ var sortedNames5 = [
   "Tiara Desmitha (2210010477)",
 ];
 
+var sortedNames6 = [
+  "Mariyani (2210010095)",
+  "Tiara Desmitha (2210010477)",
+  "Ahmad Syaifuddin (2210010111)",
+  "Ismu (2210010105)",
+  "Gita (2210010187)",
+  "Syauqan Tsauri (2210010192)",
+  "Aldy Rahmatillah (2210010340)",
+  "Diah (2210010049)",
+  "Aqli (2210010633)",
+  "Haliza (2210010347)",
+  "Riza (2210010234)",
+  "Ammar (2210010463)",
+  "Nur Falah (2210010511)",
+  "Angri (2210010366)",
+  "Mellyta (2210010449)",
+  "Haldi (2210010283)",
+  "Geraldi (2210010492)",
+  "Rifqi (2210010194)",
+  "Zia (2210010107)",
+  "Hambali Abdan (2210010143)",
+  "Januar Muzzaki (2210010182)",
+  "Rio (2210010275)",
+  "Amalia Putri (2210010453)",
+  "Niko (2210010395)",
+  "Ryandy (2210010456)",
+  "Maulidi (2210010663)",
+  "Akmal (2210010546)",
+  "Wiza (2210010495)",
+];
+
 // Variabel global untuk menyimpan probabilitas pengacakan
-let probability1 = 0.6;
+let probability1 = 0.5;
 let probability2 = 0.2;
 let probability3 = 0.4;
 let probability4 = 0.5;
+let probability5 = 0.6;
 
 // Function untuk memilih daftar nama secara acak
 function chooseRandomList() {
@@ -352,5 +385,7 @@ function chooseRandomList() {
     ? sortedNames3
     : Math.random() < probability4
     ? sortedNames4
-    : sortedNames5;
+    : Math.random() < probability5
+    ? sortedNames5
+    : sortedNames6;
 }
