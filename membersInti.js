@@ -92,7 +92,8 @@ function divideGroups() {
     groupSizes.push(groupSize);
 
     result += "<div class='group'>";
-    result += "<h3>*Kelompok " + (i + 1) + ": " + groupSizes[i] + " Orang*</h3>";
+    result +=
+      "<h3>*Kelompok " + (i + 1) + ": " + groupSizes[i] + " Orang*</h3>";
     for (var j = 0; j < groupSizes[i]; j++) {
       var currentName = names[currentGroupIndex];
       result += "<p class='member'>" + currentName + "</p>";
@@ -166,6 +167,7 @@ function copyResult() {
   // Beri tahu pengguna bahwa data telah disalin
   Swal.fire({
     title: "Data Berhasil disalin!",
+    text: "Data Hasil Pembagian Kelompok Siap di Bagikan",
     icon: "success",
   });
 }
