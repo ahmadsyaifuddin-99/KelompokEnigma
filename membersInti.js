@@ -300,6 +300,37 @@ var sortedNames4 = [
   "Maulidi (2210010663)",
 ];
 
+var sortedNames5 = [
+  "Diah (2210010049)",
+  "Aqli (2210010633)",
+  "Haliza (2210010347)",
+  "Riza (2210010234)",
+  "Ammar (2210010463)",
+  "Nur Falah (2210010511)",
+  "Mariyani (2210010095)",
+  "Ismu (2210010105)",
+  "Mellyta (2210010449)",
+  "Haldi (2210010283)",
+  "Geraldi (2210010492)",
+  "Rifqi (2210010194)",
+  "Zia (2210010107)",
+  "Hambali Abdan (2210010143)",
+  "Januar Muzzaki (2210010182)",
+  "Rio (2210010275)",
+  "Amalia Putri (2210010453)",
+  "Niko (2210010395)",
+  "Ryandy (2210010456)",
+  "Maulidi (2210010663)",
+  "Akmal (2210010546)",
+  "Wiza (2210010495)",
+  "Aldy Rahmatillah (2210010340)",
+  "Ahmad Syaifuddin (2210010111)",
+  "Gita (2210010187)",
+  "Angri (2210010366)",
+  "Syauqan Tsauri (2210010192)",
+  "Tiara Desmitha (2210010477)",
+];
+
 // Function untuk memilih daftar nama secara acak
 function chooseRandomList() {
   return Math.random() < 0.5
@@ -308,5 +339,7 @@ function chooseRandomList() {
     ? sortedNames2
     : Math.random() < 0.6
     ? sortedNames3
-    : sortedNames4;
+    : Math.random() < 0.5
+    ? sortedNames4
+    : sortedNames5;
 }
