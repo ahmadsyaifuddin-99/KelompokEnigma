@@ -92,7 +92,7 @@ function divideGroups() {
     groupSizes.push(groupSize);
 
     result += "<div class='group'>";
-    result += "<h3>Kelompok " + (i + 1) + ": " + groupSizes[i] + " Orang</h3>";
+    result += "<h3>*Kelompok " + (i + 1) + ": " + groupSizes[i] + " Orang*</h3>";
     for (var j = 0; j < groupSizes[i]; j++) {
       var currentName = names[currentGroupIndex];
       result += "<p class='member'>" + currentName + "</p>";
@@ -369,8 +369,8 @@ var sortedNames6 = [
 ];
 
 // Variabel global untuk menyimpan probabilitas pengacakan
-let probability1 = 0.1;
-let probability2 = 0.2;
+let probability1 = 0.2;
+let probability2 = 0.1;
 let probability3 = 0.3;
 let probability4 = 0.4;
 let probability5 = 0.5;
