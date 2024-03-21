@@ -341,12 +341,12 @@ var sortedNames6 = [
   "Mariyani (2210010095)",
   "Tiara Desmitha (2210010477)",
   "Ahmad Syaifuddin (2210010111)",
+  "Diah (2210010049)",
   "Ismu (2210010105)",
-  "Gita (2210010187)",
   "Syauqan Tsauri (2210010192)",
   "Aldy Rahmatillah (2210010340)",
-  "Diah (2210010049)",
   "Aqli (2210010633)",
+  "Gita (2210010187)",
   "Haliza (2210010347)",
   "Riza (2210010234)",
   "Ammar (2210010463)",
@@ -369,11 +369,11 @@ var sortedNames6 = [
 ];
 
 // Variabel global untuk menyimpan probabilitas pengacakan
-let probability1 = 0.5;
+let probability1 = 0.1;
 let probability2 = 0.2;
-let probability3 = 0.4;
-let probability4 = 0.5;
-let probability5 = 0.6;
+let probability3 = 0.3;
+let probability4 = 0.4;
+let probability5 = 0.5;
 
 // Function untuk memilih daftar nama secara acak
 function chooseRandomList() {
