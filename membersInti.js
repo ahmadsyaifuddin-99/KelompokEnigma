@@ -324,12 +324,12 @@ var sortedNames5 = [
   "Zia (2210010107)",
   "Hambali Abdan (2210010143)",
   "Januar Muzzaki (2210010182)",
-  "Rio (2210010275)",
+  "Akmal (2210010546)",
   "Amalia Putri (2210010453)",
   "Niko (2210010395)",
   "Ryandy (2210010456)",
   "Maulidi (2210010663)",
-  "Akmal (2210010546)",
+  "Rio (2210010275)",
   "Wiza (2210010495)",
   "Aldy Rahmatillah (2210010340)",
   "Ahmad Syaifuddin (2210010111)",
@@ -375,7 +375,7 @@ let probability1 = 0.1;
 let probability2 = 0.2;
 let probability3 = 0.3;
 let probability4 = 0.4;
-let probability5 = 0.5;
+let probability5 = 0.9;
 
 // Function untuk memilih daftar nama secara acak
 function chooseRandomList() {
