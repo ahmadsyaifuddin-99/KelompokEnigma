@@ -2,7 +2,7 @@
 
 
 body {
-    font-family: 'itim', cursive;
+    font-family: 'itim', system-ui;
     background-color: #f0f0f0;
 }
 
@@ -407,7 +407,7 @@ label {
 
 /* CSS untuk input "Nama Tugas atau Mata Kuliah" */
 #taskName {
-    font-family: 'itim', cursive;
+    font-family: 'itim', system-ui;
     width: 100%;
     margin-bottom: 10px;
     padding: 6px;
@@ -426,7 +426,7 @@ label[for="taskName"] {
 
 textarea,
 input[type="number"] {
-    font-family: 'itim', cursive;
+    font-family: 'itim', system-ui;
     width: 100%;
     margin-bottom: 10px;
     padding: 6px 6px 6px;
@@ -436,7 +436,7 @@ input[type="number"] {
 
 button {
     display: block;
-    font-family: 'itim', cursive;
+    font-family: 'itim', system-ui;
     margin-top: 10px;
     padding: 10px 20px;
     background-color: #FC9D0F;
