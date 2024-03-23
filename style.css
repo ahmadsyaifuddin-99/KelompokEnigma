@@ -467,13 +467,13 @@ button {
     font-weight: 700;
     border: 3px solid black;
     border-radius: 0.4em;
-    box-shadow: 0.1em 0.1em;
+    box-shadow: 0.2em 0.2em;
     cursor: pointer;
 }
 
 button:hover {
     transform: translate(-0.05em, -0.05em);
-    box-shadow: 0.15em 0.15em;
+    box-shadow: 0.25em 0.25em;
 }
 
 button:active {
