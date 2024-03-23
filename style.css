@@ -434,7 +434,7 @@ input[type="number"] {
     border-radius: 3px;
 }
 
-button {
+/* button {
     display: block;
     font-family: 'itim', system-ui;
     margin-top: 10px;
@@ -456,12 +456,37 @@ button:hover {
     border-bottom-right-radius: 0px;
     transition: 1s;
 
+} */
+
+
+button {
+    background: #FC9D0F;
+    font-family: 'itim', system-ui;
+    font-size: 13px;
+    padding: 0.7em 1.1em;
+    font-weight: 700;
+    border: 3px solid black;
+    border-radius: 0.4em;
+    box-shadow: 0.1em 0.1em;
+    cursor: pointer;
 }
+
+button:hover {
+    transform: translate(-0.05em, -0.05em);
+    box-shadow: 0.15em 0.15em;
+}
+
+button:active {
+    transform: translate(0.05em, 0.05em);
+    box-shadow: 0.05em 0.05em;
+}
+
 
 .cursor-not-allowed {
     cursor: not-allowed;
 }
 
+/* END BUTTON */
 
 #result {
     margin-top: 20px;
