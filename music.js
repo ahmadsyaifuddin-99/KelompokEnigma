@@ -8,11 +8,11 @@ function toggleAudio() {
   if (audio.paused) {
     audio.play();
     audioStatus = true;
-    audioButton.innerHTML = '<i class="fas fa-volume-mute"></i>'; // Mengubah ikon menjadi mute
+    audioButton.innerHTML = '<i class="fas fa-music fa-lg"></i>'; // Mengubah ikon menjadi mute
   } else {
     audio.pause();
     audioStatus = false;
-    audioButton.innerHTML = '<i class="fas fa-music fa-lg"></i>'; // Mengubah ikon menjadi music
+    audioButton.innerHTML = '<i class="fas fa-volume-mute"></i>'; // Mengubah ikon menjadi music
   }
 }
 
