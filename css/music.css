@@ -17,7 +17,7 @@
 .note {
     position: absolute;
     bottom: 50px;
-    right: 50px;
+    right: 20px;
     font-size: 24px;
     color: #ffab00;
     opacity: 0;
