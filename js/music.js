@@ -24,7 +24,7 @@ function animateNotes() {
   // Memulai animasi secara bergantian untuk setiap note
   notes.forEach((note, index) => {
     setTimeout(() => {
-      note.style.animation = "noteAnimation 2s ease forwards";
+      note.style.animation = "noteAnimation 2s ease forwards infinite";
     }, index * 500); // Mengatur jeda antara setiap note
   });
 }
