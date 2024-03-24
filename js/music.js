@@ -5,10 +5,14 @@ var audioStatus = true;
 function toggleAudio() {
   var audio = document.getElementById("audio");
   var audioButton = document.getElementById("audioButton");
+  var note = document.querySelector(".note");
   if (audio.paused) {
     audio.play();
     audioStatus = true;
     audioButton.innerHTML = '<i class="fas fa-music fa-lg"></i>'; // Mengubah ikon menjadi mute
+    note.style.animation = "none"; // Menonaktifkan animasi
+    note.offsetHeight; // Trigger reflow
+    note.style.animation = "noteAnimation 2s ease forwards"; // Mengaktifkan kembali animasi
   } else {
     audio.pause();
     audioStatus = false;
