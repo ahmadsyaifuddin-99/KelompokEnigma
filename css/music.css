@@ -1,15 +1,15 @@
 @keyframes noteAnimation {
     0% {
         transform: translateY(0);
-        opacity: 50;
+        opacity: 1;
     }
 
     70% {
-        opacity: 50;
+        opacity: 0;
     }
 
     100% {
-        transform: translateY(-50px);
+        transform: translateY(-60px);
         opacity: 0;
     }
 }
