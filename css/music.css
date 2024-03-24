@@ -4,6 +4,10 @@
         opacity: 1;
     }
 
+    70% {
+        opacity: 1;
+    }
+
     100% {
         transform: translateY(-100px);
         opacity: 0;
@@ -16,5 +20,6 @@
     right: 50px;
     font-size: 24px;
     color: #ffab00;
-    animation: noteAnimation 2s ease forwards;
+    opacity: 0;
+    /* Semua note tidak terlihat saat dimulai */
 }

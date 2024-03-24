@@ -1,23 +1,42 @@
-// Tambahkan variabel global untuk status audio
+// Tambahkan variabel global untuk status audio dan array untuk note
 var audioStatus = true;
+var notes = document.querySelectorAll(".note");
 
 // Fungsi untuk mengaktifkan/menonaktifkan audio
 function toggleAudio() {
   var audio = document.getElementById("audio");
   var audioButton = document.getElementById("audioButton");
-  var note = document.querySelector(".note");
   if (audio.paused) {
     audio.play();
     audioStatus = true;
     audioButton.innerHTML = '<i class="fas fa-music fa-lg"></i>'; // Mengubah ikon menjadi mute
-    note.style.animation = "none"; // Menonaktifkan animasi
-    note.offsetHeight; // Trigger reflow
-    note.style.animation = "noteAnimation 2s ease forwards"; // Mengaktifkan kembali animasi
+    animateNotes(); // Memulai animasi note
   } else {
     audio.pause();
     audioStatus = false;
     audioButton.innerHTML = '<i class="fas fa-volume-mute"></i>'; // Mengubah ikon menjadi music
+    stopAnimation(); // Menghentikan animasi note
   }
+}
+
+// Fungsi untuk memulai animasi note
+function animateNotes() {
+  // Memulai animasi secara bergantian untuk setiap note
+  notes.forEach((note, index) => {
+    setTimeout(() => {
+      note.style.animation = "noteAnimation 2s ease forwards";
+    }, index * 500); // Mengatur jeda antara setiap note
+  });
+}
+
+// Fungsi untuk menghentikan animasi note
+function stopAnimation() {
+  // Menghentikan animasi dan mengatur kembali ke nilai awal
+  notes.forEach((note) => {
+    note.style.animation = "none";
+    note.style.opacity = 0;
+    note.style.transform = "translateY(0)";
+  });
 }
 
 // Tambahkan audio di sini
