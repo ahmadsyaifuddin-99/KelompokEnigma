@@ -44,6 +44,12 @@ var audio = new Audio("../asset/Lagu_Banjar1.mp3");
 audio.setAttribute("id", "audio");
 document.body.appendChild(audio);
 
+// Event listener untuk ketika lagu selesai diputar
+audio.addEventListener("ended", function () {
+  this.currentTime = 0; // Mengatur ulang waktu audio ke awal
+  this.play(); // Memulai lagu lagi
+});
+
 // Gaya untuk widget audio
 var audioWidget = document.getElementById("audioWidget");
 audioWidget.style.position = "fixed";
