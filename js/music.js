@@ -40,7 +40,7 @@ function stopAnimation() {
 }
 
 // Tambahkan audio di sini
-var audio = new Audio("./asset/fireflies.mp3");
+var audio = new Audio("../asset/Lagu_Banjar1.mp3");
 audio.setAttribute("id", "audio");
 document.body.appendChild(audio);
 
