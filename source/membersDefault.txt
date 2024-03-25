@@ -1,3 +1,5 @@
+Versi Nama Tidak Lengkap
+    
     "Diah (2210010049)",
     "Mariyani (2210010095)",
     "Ismu (2210010105)",
@@ -26,3 +28,9 @@
     "Geraldi (2210010492)",
     "Wiza (2210010495)",
     "Nur Falah (2210010511)",
+
+
+
+Versi Nama Lengkap
+
+Diah Kurniawati (2210010049), Mariyani (2210010095), Ismu Haqi (2210010105), Muhammad Zia Ul Haq Rahman (2210010107), Ahmad Syaifuddin (2210010111), Hambali Abdan (2210010143), Muhammad Januar Muzzaki (2210010182), Gita (2210010187), Syauqan Tsauri (2210010192), Muhammad Rifqi (2210010194), Muhammad Riza Maulana Ib'san (2210010234), Muhammad Rio Bima Saputra (2210010275), Amalia Putri (2210010453), M.Haldi (2210010283), Muhammad Aldy Rahmatillah (2210010340), Haliza Sabila Halim (2210010347), Angri Santoso (2210010366), Muhammad Aqli Andi Basith (2210010633), Muhammad Niko Prayudha (2210010395), Mellyta Anggreani (2210010449), Ryandy Rhamadhany (2210010456), Muhammad Maulidi (2210010663), Muhammad Akmal Fitrianto (2210010546), Muhammad Ammar Dzakki (2210010463), Tiara Desmitha Oliviany (2210010477), Geraldi Fikri Haikal (2210010492), Wiza Pramana Putra (2210010495), Muhammad Nur Falah (2210010511)
