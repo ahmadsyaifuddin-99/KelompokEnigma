@@ -442,33 +442,23 @@ let probability6 = 0.2;
 let probability7 = 0.1;
 let probability8 = 0.1;
 
-// Variabel global untuk melacak urutan daftar nama yang digunakan
-let currentListIndex = 0;
-
-// Array of sorted names lists
-let sortedNamesList = [
-  sortedNames1,
-  sortedNames2,
-  sortedNames3,
-  sortedNames4,
-  sortedNames5,
-  sortedNames6,
-  sortedNames7,
-  sortedNames8,
-];
-
 // Function untuk memilih daftar nama secara acak
 function chooseRandomList() {
-  // Mengambil daftar nama berdasarkan indeks saat ini
-  let chosenList = sortedNamesList[currentListIndex];
-
-  // Mengatur indeks berikutnya untuk pengambilan daftar nama berikutnya
-  currentListIndex = (currentListIndex + 1) % sortedNamesList.length;
-
-  return chosenList;
-}
-
-// Function to shuffle an array
-function shuffle(array) {
-  // ...
+  return Math.random() < probability1
+    ? sortedNames1
+    : Math.random() < probability2
+    ? sortedNames2
+    : Math.random() < probability3
+    ? sortedNames3
+    : Math.random() < probability4
+    ? sortedNames4
+    : Math.random() < probability5
+    ? sortedNames5
+    : Math.random() < probability6
+    ? sortedNames6
+    : Math.random() < probability7
+    ? sortedNames7
+    : Math.random() < probability8
+    ? sortedNames8
+    : sortedNames9;
 }
