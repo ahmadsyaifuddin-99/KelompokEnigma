@@ -401,13 +401,46 @@ var sortedNames7 = [
   "Geraldi (2210010492)",
 ];
 
+var sortedNames8 = [
+  "Riza (2210010234)",
+  "Mellyta (2210010449)",
+  "Nur Falah (2210010511)",
+  "Haliza (2210010347)",
+  "Zia (2210010107)",
+  "Ammar (2210010463)",
+  "Niko (2210010395)",
+  "Mariyani (2210010095)",
+  "Aldy Rahmatillah (2210010340)",
+  "Maulidi (2210010663)",
+  "Wiza (2210010495)",
+  "Haldi (2210010283)",
+  "Rifqi (2210010194)",
+  "Syauqan Tsauri (2210010192)",
+  "Geraldi (2210010492)",
+  "Gita (2210010187)",
+  "Aldy Rahmatillah (2210010340)",
+  "Rio (2210010275)",
+  "Ahmad Syaifuddin (2210010111)",
+  "Diah (2210010049)",
+  "Januar Muzzaki (2210010182)",
+  "Tiara Desmitha (2210010477)",
+  "Hambali Abdan (2210010143)",
+  "Akmal (2210010546)",
+  "Angri (2210010366)",
+  "Amalia Putri (2210010453)",
+  "Ismu (2210010105)",
+  "Aqli (2210010633)",
+];
+
 // Variabel global untuk menyimpan probabilitas pengacakan
 let probability1 = 0.1;
 let probability2 = 0.2;
 let probability3 = 0.3;
 let probability4 = 0.4;
 let probability5 = 0.9;
-let probability6 = 0.7;
+let probability6 = 0.2;
+let probability7 = 0.1;
+let probability8 = 0.1;
 
 // Function untuk memilih daftar nama secara acak
 function chooseRandomList() {
@@ -423,5 +456,9 @@ function chooseRandomList() {
     ? sortedNames5
     : Math.random() < probability6
     ? sortedNames6
-    : sortedNames7;
+    : Math.random() < probability7
+    ? sortedNames7
+    : Math.random() < probability8
+    ? sortedNames8
+    : sortedNames9;
 }
