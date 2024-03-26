@@ -12,21 +12,7 @@ body {
     background-size: cover;
 }
 
-.img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100px;
-    /* Sesuaikan ukuran gambar dengan kebutuhan Anda */
-    height: 100px;
-    /* Sesuaikan ukuran gambar dengan kebutuhan Anda */
-    background-image: url('/asset/Twist.png');
-    /* Ganti 'image.jpg' dengan path gambar Anda */
-    background-size: cover;
-    background-position: center;
-    border-radius: 50%;
-    /* Untuk gambar lingkaran */
-}
+
 
 
 .container {
