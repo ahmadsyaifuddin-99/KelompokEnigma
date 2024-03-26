@@ -40,7 +40,7 @@ function stopAnimation() {
 }
 
 // Tambahkan audio di sini
-var audio = new Audio("./audio/Lagu_Banjar2.mp3");
+var audio = new Audio("./audio/The_Universe_In_Me.mp3");
 audio.setAttribute("id", "audio");
 document.body.appendChild(audio);
 
