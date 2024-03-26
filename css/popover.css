@@ -1,0 +1,49 @@
+.pop {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+
+/* CSS untuk custom popover */
+.custom-popover .popover-header {
+    background-color: black;
+    /* Warna latar belakang header */
+    color: #ffffff;
+    /* Warna teks header */
+    border-bottom: none;
+    /* Hapus garis bawah header */
+}
+
+.custom-popover .popover-body {
+    background-color: #f8f9fa;
+    /* Warna latar belakang konten */
+    color: #000;
+    /* Warna teks konten */
+}
+
+/* Panjang dan lebar popover */
+.custom-popover.bs-popover-right .arrow::before,
+.custom-popover.bs-popover-left .arrow::before {
+    border-top-width: 0.5rem;
+    /* Ukuran panjang panah */
+}
+
+.custom-popover.bs-popover-top .arrow::before,
+.custom-popover.bs-popover-bottom .arrow::before {
+    border-left-width: 0.5rem;
+    /* Ukuran lebar panah */
+}
+
+/* Warna panah */
+.custom-popover.bs-popover-right .arrow::before,
+.custom-popover.bs-popover-left .arrow::before {
+    border-right-color: #007bff;
+    /* Warna panah untuk popover di kanan/kiri */
+}
+
+.custom-popover.bs-popover-top .arrow::before,
+.custom-popover.bs-popover-bottom .arrow::before {
+    border-top-color: #f8f9fa;
+    /* Warna panah untuk popover di atas/bawah */
+}
