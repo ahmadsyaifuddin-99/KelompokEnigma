@@ -8,9 +8,9 @@
 body {
     font-family: 'itim', system-ui;
     /* background-color: #f0f0f0; */
-    background-image: url(../asset/meadow.jpg);
+    background-image: url(../asset/galaxy.jpg);
     background-size: cover;
-    background-position: center;
+    /* background-position: center; */
 }
 
 .img {
