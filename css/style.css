@@ -1,9 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Itim');
 
+* {
+    margin: 0;
+    padding: 0;
+}
 
 body {
     font-family: 'itim', system-ui;
-    background-color: #f0f0f0;
+    /* background-color: #f0f0f0; */
+    background-image: url(../asset/meadow.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
 .img {
@@ -193,8 +200,10 @@ footer {
     left: 0;
     width: 100%;
     text-align: center;
-    background-color: #f0f0f0;
+    /* background-color: #f0f0f0; */
+    backdrop-filter: blur(10px);
+    color: white;
     /* Warna latar belakang footer */
-    padding: 10px 0;
+    padding: 15px 0;
     /* Padding atas dan bawah footer */
 }
