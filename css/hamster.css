@@ -1,23 +1,23 @@
 /* Hamster Animation  */
 
-/* .wheel-and-hamster {
-    --dur: 1.2s;
-    position: relative;
-    width: 12em;
-    height: 12em;
-    font-size: 8px;
-} */
-
 .wheel-and-hamster {
     --dur: 1.2s;
     position: relative;
-    top: 20%;
-    left: 40%;
-    /* transform: translate(-50%, -50%); */
     width: 12em;
     height: 12em;
     font-size: 8px;
 }
+
+/* .wheel-and-hamster {
+    --dur: 1.2s;
+    position: relative;
+    top: 10%;
+    left: 40%;
+    transform: translate(-10%, -20%);
+    width: 12em;
+    height: 12em;
+    font-size: 8px;
+} */
 
 .wheel,
 .hamster,
