@@ -1,7 +1,7 @@
 /* Hamster Animation  */
 
 .wheel-and-hamster {
-    --dur: 1s;
+    --dur: 1.2s;
     position: relative;
     width: 12em;
     height: 12em;
