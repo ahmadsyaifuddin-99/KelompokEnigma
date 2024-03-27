@@ -1,6 +1,11 @@
-// Tambahkan variabel global untuk status audio dan array untuk note
+// Tambahkan variabel global untuk status audio, array untuk note, dan objek lagu
 var audioStatus = true;
 var notes = document.querySelectorAll(".note");
+var songs = [
+  { title: "The Universe In Me", file: "./audio/The_Universe_In_Me.mp3" },
+  { title: "Alphine Sountrack", file: "./audio/Alphine_Music.mp3" },
+  { title: "Island Sountrack", file: "./audio/Island_Music.mp3" }, // Tambahkan lagu-lagu lain di sini
+];
 
 // Fungsi untuk mengaktifkan/menonaktifkan audio
 function toggleAudio() {
@@ -39,8 +44,15 @@ function stopAnimation() {
   });
 }
 
+// Fungsi untuk mengubah lagu
+function changeSong(songIndex) {
+  var audio = document.getElementById("audio");
+  audio.src = songs[songIndex].file;
+  audio.play();
+}
+
 // Tambahkan audio di sini
-var audio = new Audio("./audio/The_Universe_In_Me.mp3");
+var audio = new Audio(songs[0].file);
 audio.setAttribute("id", "audio");
 document.body.appendChild(audio);
 

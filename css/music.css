@@ -22,3 +22,34 @@
     color: #FC9D0F;
     opacity: 0;
 }
+
+/* Style untuk dropdown Select Musics*/
+#songSelect {
+    padding: 3px 3px;
+    font-size: 13px;
+    border-radius: 5px;
+    background-color: transparent;
+    border-color: orange;
+    color: #FC9D0F;
+    appearance: none;
+    /* Hilangkan default style dari browser */
+    -webkit-appearance: none;
+    /* Untuk browser WebKit seperti Chrome dan Safari */
+    -moz-appearance: none;
+    /* Untuk browser Mozilla Firefox */
+}
+
+
+/* Style saat dropdown dihover */
+#songSelect:hover {
+    border-color: #eee;
+    /* Ubah warna border saat dihover */
+}
+
+/* Style untuk dropdown saat dipilih */
+#songSelect:focus {
+    outline: none;
+    /* Hilangkan outline saat dipilih */
+    box-shadow: 0 0 0 2px #eee;
+    /* Tambahkan shadow untuk menunjukkan fokus */
+}

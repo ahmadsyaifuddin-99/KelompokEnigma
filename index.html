@@ -87,6 +87,14 @@ E https://kelompok-enigma.vercel.app/ -->
 
         <!-- Tombol ikon widget audio -->
         <div id="audioWidget">
+
+        <!-- Dropdown untuk memilih lagu -->
+    <select id="songSelect" onchange="changeSong(this.value)">
+        <option value="0">The Universe In Me</option>
+        <option value="1">Alphine Song</option>
+        <option value="2">Island Song</option>
+        <!-- Tambahkan opsi untuk lagu-lagu lain di sini -->
+    </select>
         <!-- Ikon audio menggunakan Font Awesome -->
         <button id="audioButton" onclick="toggleAudio()">
             <i class="fa-solid fa-music fa-lg"></i>
