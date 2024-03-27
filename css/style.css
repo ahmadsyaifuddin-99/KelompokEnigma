@@ -179,7 +179,7 @@ button:active {
 }
 
 footer {
-    margin-bottom: 5px;
+    padding-bottom: 10px;
     position: static;
     bottom: 0;
     left: 0;
