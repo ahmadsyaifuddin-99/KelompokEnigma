@@ -180,14 +180,14 @@ button:active {
 
 footer {
     position: static;
-    bottom: 0;
-    left: 0;
+    /* bottom: 0; */
+    /* left: 0; */
     width: 100%;
     text-align: center;
     /* background-color: #f0f0f0; */
     backdrop-filter: blur(10px);
     color: white;
     /* Warna latar belakang footer */
-    padding: 15px 0;
+    padding: 30px 0;
     /* Padding atas dan bawah footer */
 }
